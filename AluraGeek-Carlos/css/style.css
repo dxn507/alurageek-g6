@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color:#9747ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    
+    
+}
+.main-container > section{
+    width: 100%;
+    max-height: auto;
+}
+h1.title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.products-container{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap:1em;
+    flex-wrap: wrap;
+}
+.card{
+    width: 45%;
+    height: 200px;
+    background-color: #9747ff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-container{
+    width: 100%;
+    height: 150px;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+.card-container--info{
+    display: flex;
+    flex-direction: column;
+}
+.card-container--value{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-container--value .delete-button{
+    cursor: pointer;
+}
+.card-container--value img{
+    width:20px;
+}
+/*Formulario*/
+.form_container{
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:20px;
+}
+.form_container input{
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding:12px 15px;
+    font-size: 1rem;
+}
+.buttom-container{
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.buttom-container .btn{
+    border-radius:  10px;
+    padding: 15px 30px;
+    border: solid 3px rgb(3,49,140);
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.button-submit{
+    background-color: rgb(3,49,140);
+    color: #fff;
+    transition: .3s;
+}
+.button-submit:hover{
+    background-color:  #fff;
+    color:rgb(3,49,140);
+}
+.button-clear{
+    color: rgb(3,49,140);
+    transition: .3s;
+}
+.button-clear:hover{
+    background-color: rgb(3,49,140);
+    color: #fff;
+}
+
+/*Pie de página
+*/
+.footer-container{
+    width: 100%;
+    height: 100px;
+    background-color: #9747ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+    
+}
+/*Consulta de medios*/
+@media (min-width:768px){
+   
+    .main-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        
+    }
+    .card{
+        width: 25%;
+
+    }
+    
+}
